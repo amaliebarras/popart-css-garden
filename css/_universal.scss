@@ -1,0 +1,58 @@
+body { 
+	font-family: 'Proxima Nova';
+	line-height: 1.8em;
+	}
+
+p { 
+	font-family: 'Proxima Nova';
+	margin-top: 0; 
+	padding: 0em 4%;
+	}
+
+h1 { 
+	background-color: $primary-color;
+ 	font-family: 'blenny';
+ 	color: white;
+ 	padding: 0.5em 8%;
+ 	font-size: 2.5em;
+ 	line-height: 1em;
+	}
+
+h2 {
+	font-family: 'blenny';
+	color: $color-1;
+	padding: 0em 8%;
+	font-size: 1.75em;
+	line-height: 1em;
+}
+
+h3 { 
+	font-size: 2em;
+	font-family: 'Proxima Nova';
+	font-weight: black;
+	letter-spacing: 1px; 
+	margin-bottom: 1em; 
+	color: $primary-color;
+	padding: 0em 4%;
+	}
+
+a:link { 
+	text-decoration: underline; 
+	color: $color-1;
+	}
+
+a:visited { 
+	text-decoration: underline; 
+	color: $primary-color;
+	}
+
+a:hover, a:focus, a:active { 
+	text-decoration: underline; 
+	color: $color-1;
+	font-weight: bold;
+	}
+
+ul {
+	padding: 0;
+	list-style-type: none;
+}

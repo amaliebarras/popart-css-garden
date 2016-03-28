@@ -1,0 +1,468 @@
+/* css Zen Garden default style v1.02 */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* This file based on 'Tranquille' by Dave Shea */
+/* You may use this file as a foundation for any new work, but you may find it easier to start from scratch. */
+/* Not all elements are defined in this file, so you'll most likely want to refer to the xhtml as well. */
+/* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
+/* basic elements */
+/* TYPEKIT_KIT_ID: bgc8uoz */
+/*! normalize.css v1.0.1 | MIT License | git.io/normalize */
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+  display: block; }
+
+audio, canvas, video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1; }
+
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+[hidden] {
+  display: none; }
+
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+html, button, input, select, textarea {
+  font-family: sans-serif; }
+
+body {
+  margin: 0; }
+
+a:focus {
+  outline: thin dotted; }
+
+a:active, a:hover {
+  outline: 0; }
+
+h1 {
+  font-size: 2em;
+  margin: 0; }
+
+h2 {
+  font-size: 1.5em;
+  margin: .83em 0; }
+
+h3 {
+  font-size: 1.17em;
+  margin: 1em 0; }
+
+h4 {
+  font-size: 1em;
+  margin: 1.33em 0; }
+
+h5 {
+  font-size: .83em;
+  margin: 1.67em 0; }
+
+h6 {
+  font-size: .75em;
+  margin: 2.33em 0; }
+
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+b, strong {
+  font-weight: bold; }
+
+blockquote {
+  margin: 1em 40px; }
+
+dfn {
+  font-style: italic; }
+
+mark {
+  background: #ff0;
+  color: #000; }
+
+p, pre {
+  margin: 1em 0; }
+
+code, kbd, pre, samp {
+  font-family: monospace,serif;
+  _font-family: 'courier new',monospace;
+  font-size: 1em; }
+
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word; }
+
+q {
+  quotes: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+small {
+  font-size: 80%; }
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+dl, menu, ol, ul {
+  margin: 1em 0; }
+
+dd {
+  margin: 0 0 0 40px; }
+
+menu, ol, ul {
+  padding: 0 0 0 40px; }
+
+nav ul, nav ol {
+  list-style: none;
+  list-style-image: none; }
+
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic; }
+
+svg:not(:root) {
+  overflow: hidden; }
+
+figure {
+  margin: 0; }
+
+form {
+  margin: 0; }
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: .35em .625em .75em; }
+
+legend {
+  border: 0;
+  padding: 0;
+  white-space: normal;
+  *margin-left: -7px; }
+
+button, input, select, textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle; }
+
+button, input {
+  line-height: normal; }
+
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+  *overflow: visible; }
+
+button[disabled], input[disabled] {
+  cursor: default; }
+
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+  *height: 13px;
+  *width: 13px; }
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box; }
+
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+textarea {
+  overflow: auto;
+  vertical-align: top; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  font-family: 'Proxima Nova';
+  line-height: 1.8em; }
+
+p {
+  font-family: 'Proxima Nova';
+  margin-top: 0;
+  padding: 0em 4%; }
+
+h1 {
+  background-color: #FF00DE;
+  font-family: 'blenny';
+  color: white;
+  padding: 0.5em 8%;
+  font-size: 2.5em;
+  line-height: 1em; }
+
+h2 {
+  font-family: 'blenny';
+  color: #0100ff;
+  padding: 0em 8%;
+  font-size: 1.75em;
+  line-height: 1em; }
+
+h3 {
+  font-size: 2em;
+  font-family: 'Proxima Nova';
+  font-weight: black;
+  letter-spacing: 1px;
+  margin-bottom: 1em;
+  color: #FF00DE;
+  padding: 0em 4%; }
+
+a:link {
+  text-decoration: underline;
+  color: #0100ff; }
+
+a:visited {
+  text-decoration: underline;
+  color: #FF00DE; }
+
+a:hover, a:focus, a:active {
+  text-decoration: underline;
+  color: #0100ff;
+  font-weight: bold; }
+
+ul {
+  padding: 0;
+  list-style-type: none; }
+
+/* specific divs */
+.summary {
+  padding: 1em 4%; }
+
+.summary a {
+  padding: 3em;
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  background-color: #FF00DE;
+  font-weight: bold;
+  color: #e6ff00;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 1em;
+  margin: 1em 0em; }
+
+a[title="This page's source HTML code, not to be modified."] {
+  float: left; }
+
+a[title="This page's sample CSS, the file you may modify."] {
+  float: left; }
+
+.summary a::after {
+  content: "!"; }
+
+.summary p:last-child {
+  line-height: 0em;
+  color: #fff; }
+
+.preamble {
+  background-color: #e6ff00;
+  padding: 2em 4%;
+  clear: both; }
+
+.preamble h3 p {
+  float: left; }
+
+.explanation {
+  padding: 2em 4%;
+  margin: 0em 0 5em 0; }
+
+.participation {
+  background-color: #FF00DE;
+  padding: 2em 0;
+  color: #fff;
+  padding: 2em 4%; }
+
+.participation h3 {
+  color: #fff; }
+
+.benefits {
+  padding: 2em 4%; }
+
+.requirements {
+  background-color: #FF00DE;
+  padding: 2em 4%;
+  color: #fff; }
+  .requirements h3 {
+    color: #fff; }
+
+p[role="contentinfo"] {
+  background-color: white;
+  border: solid 10px #e6ff00;
+  color: black; }
+
+.sidebar {
+  border: solid 10px #FF00DE;
+  padding: 1.2em;
+  box-sizing: border-box;
+  line-height: 1.2em;
+  background-color: #e6ff00; }
+
+.sidebar h3 {
+  text-transform: uppercase;
+  padding: 0;
+  line-height: 1em; }
+
+.sidebar a {
+  line-height: 1em; }
+
+footer {
+  text-align: center; }
+
+footer a {
+  width: 18%;
+  height: auto;
+  display: inline-block;
+  margin: 1em 0;
+  font-weight: bold; }
+
+@media only screen and (min-width: 769px) {
+  .intro {
+    float: left;
+    width: 70%; }
+
+  .intro p {
+    width: 40%;
+    float: right; }
+
+  .summary {
+    padding: 7%; }
+
+  .summary a {
+    height: 10em;
+    width: 10em;
+    border-radius: 50%;
+    background-color: #FF00DE;
+    font-weight: bold;
+    color: #e6ff00;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1em; }
+
+  .summary a::after {
+    content: "!"; }
+
+  .main {
+    float: left;
+    width: 70%; }
+
+  .preamble {
+    background-color: #e6ff00;
+    padding: 2em 5%; }
+
+  .preamble h3 p {
+    float: left; }
+
+  .preamble h3::after {
+    content: url(scream.png);
+    float: right;
+    margin: 0 1em; }
+
+  .participation::before {
+    float: right;
+    margin: 0 1em; }
+
+  .explanation {
+    padding: 2em 5%;
+    margin: 0em 1em 5em 1em; }
+
+  .explanation h3::after {
+    content: url(buddha.png);
+    float: left;
+    margin: 0em 1em; }
+
+  .participation {
+    background-color: #FF00DE;
+    padding: 2em 5%;
+    color: #fff; }
+
+  .participation h3 {
+    color: #fff; }
+
+  .participation::after {
+    content: url(hand.png);
+    margin: 0 1em; }
+
+  .benefits {
+    padding: 2em 5%; }
+
+  .requirements {
+    background-color: #FF00DE;
+    padding: 2em 5%;
+    color: #fff; }
+    .requirements h3 {
+      color: #fff; }
+
+  .requirements h3::after {
+    content: url(cactus.png);
+    float: right;
+    margin: 0 1em; }
+
+  p[role="contentinfo"] {
+    background-color: white;
+    border: solid 10px #e6ff00;
+    color: black; }
+
+  .sidebar {
+    border: solid 10px #FF00DE;
+    padding: 0 1.2em;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 30%;
+    height: 100%;
+    line-height: 1.2em;
+    background-color: #e6ff00; }
+
+  .sidebar h3 {
+    text-transform: uppercase;
+    padding: 0;
+    line-height: 1em; }
+
+  .sidebar a {
+    line-height: 1.5em;
+    font-size: 1.2em; }
+
+  footer {
+    text-align: center;
+    margin: 2em 0; }
+
+  footer > a {
+    padding: 3.5em;
+    width: 3.5em;
+    height: 3.5em;
+    border-radius: 50%;
+    background-color: #FF00DE;
+    font-weight: bold;
+    color: #e6ff00;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1em; } }
+
+/*# sourceMappingURL=style.css.map */

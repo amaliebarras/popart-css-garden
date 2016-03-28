@@ -1,0 +1,284 @@
+/* css Zen Garden default style v1.02 */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+
+/* This file based on 'Tranquille' by Dave Shea */
+/* You may use this file as a foundation for any new work, but you may find it easier to start from scratch. */
+/* Not all elements are defined in this file, so you'll most likely want to refer to the xhtml as well. */
+
+/* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
+
+/* basic elements */
+/* TYPEKIT_KIT_ID: bgc8uoz */
+@import 'normalize';
+@import 'variables';
+@import 'universal';
+
+/* specific divs */
+
+.summary {
+	padding: 1em 4%;
+}
+
+.summary a {
+	padding: 3em;
+	width: 3em;
+	height: 3em;
+	border-radius: 50%;
+	background-color: $primary-color;
+	font-weight: bold;
+	color: $color-2;
+	text-decoration: none;
+	text-align: center;
+	text-transform: uppercase;
+	line-height: 1em;
+	margin: 1em 0em;
+}
+
+a[title="This page's source HTML code, not to be modified."]{
+	float: left;
+}
+
+a[title="This page's sample CSS, the file you may modify."]{
+	float: left;
+}
+
+.summary a::after {
+	content: "!";
+}
+
+.summary p:last-child{
+	line-height: 0em;
+	color: #fff;
+}
+
+.preamble {
+	background-color: $color-2;
+	padding: 2em 4%;
+	clear: both;
+}
+
+.preamble h3 p {
+	float: left;
+}
+
+.explanation {
+	padding: 2em 4%;
+	margin: 0em 0 5em 0;
+}
+
+.participation {
+	background-color: $primary-color;
+	padding: 2em 0;
+	color: #fff;
+	padding: 2em 4%;
+}
+
+.participation h3{
+	color: #fff;
+}
+
+
+.benefits {
+	padding: 2em 4%;
+}
+
+.requirements {
+	background-color: $primary-color;
+	padding: 2em 4%;
+	color: #fff;
+	h3 {
+		color: #fff;
+	}
+}
+
+p[role="contentinfo"]{
+	background-color: white;
+	border: solid 10px $color-2;
+	color: black;
+}
+
+.sidebar {
+	border: solid 10px $primary-color;
+	padding: 1.2em;
+	box-sizing: border-box;
+  	line-height: 1.2em;
+  	background-color: $color-2;
+}
+
+.sidebar h3 {
+	text-transform: uppercase;
+	padding: 0;
+	line-height: 1em;
+}
+
+.sidebar a {
+	line-height: 1em;
+}
+
+footer {
+	text-align: center;
+}
+
+footer a {
+	width: 18%;
+	height: auto;
+	display: inline-block;
+	margin: 1em 0;
+	font-weight:  bold;
+}
+
+@media only screen and (min-width: 769px){
+
+.intro {
+	float: left;
+	width: 70%;
+}
+
+.intro p {
+	width: 40%;
+	float: right;
+}
+
+.summary {
+	padding: 7%;
+}
+
+.summary a {
+	height: 10em;
+	width: 10em;
+	border-radius: 50%;
+	background-color: $primary-color;
+	font-weight: bold;
+	color: $color-2;
+	text-decoration: none;
+	display: inline-block;
+	text-align: center;
+	text-transform: uppercase;
+	line-height: 1em;
+}
+
+.summary a::after {
+	content: "!";
+}
+
+.main {
+	float: left;
+	width: 70%;
+}
+
+.preamble {
+	background-color: $color-2;
+	padding: 2em 5%;
+}
+
+.preamble h3 p {
+	float: left;
+}
+
+.preamble h3::after {
+	content: url(scream.png);
+	float: right;
+	margin: 0 1em;
+}
+
+.participation::before {
+	float: right;
+	margin: 0 1em;
+}
+
+.explanation {
+	padding: 2em 5%;
+	margin: 0em 1em 5em 1em;
+}
+
+.explanation h3::after {
+	content: url(buddha.png);
+	float: left;
+	margin: 0em 1em;
+}
+
+.participation {
+	background-color: $primary-color;
+	padding: 2em 5%;
+	color: #fff;
+}
+
+.participation h3{
+	color: #fff;
+}
+
+.participation::after {
+	content: url(hand.png);
+	margin: 0 1em;
+}
+
+.benefits {
+	padding: 2em 5%;
+}
+
+.requirements {
+	background-color: $primary-color;
+	padding: 2em 5%;
+	color: #fff;
+	h3 {
+		color: #fff;
+	}
+}
+
+.requirements h3::after {
+	content: url(cactus.png);
+	float: right;
+	margin: 0 1em;
+}
+
+p[role="contentinfo"]{
+	background-color: white;
+	border: solid 10px $color-2;
+	color: black;
+}
+
+.sidebar {
+	border: solid 10px $primary-color;
+	padding: 0 1.2em;
+	box-sizing: border-box;
+	position:fixed;
+  	top:0;
+  	right:0;
+  	width:30%;
+  	height:100%;
+  	line-height: 1.2em;
+  	background-color: $color-2;
+}
+
+.sidebar h3 {
+	text-transform: uppercase;
+	padding: 0;
+	line-height: 1em;
+}
+
+.sidebar a {
+	line-height: 1.5em;
+	font-size: 1.2em;
+}
+
+footer {
+	text-align: center;
+	margin: 2em 0;
+}
+
+footer > a {
+	padding: 3.5em;
+	width: 3.5em;
+	height: 3.5em;
+	border-radius: 50%;
+	background-color: $primary-color;
+	font-weight: bold;
+	color: $color-2;
+	text-decoration: none;
+	display: inline-block;
+	text-align: center;
+	text-transform: uppercase;
+	line-height: 1em;
+}
+
+}
