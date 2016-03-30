@@ -206,6 +206,7 @@ p {
 
 h1 {
   background-color: #FF00DE;
+  text-shadow: 5px 5px 0px #0100ff;
   font-family: 'blenny';
   color: white;
   padding: 0.5em 8%;
@@ -213,7 +214,7 @@ h1 {
   line-height: 1em; }
 
 h2 {
-  font-family: 'blenny';
+  font-family: 'Proxima Nova';
   color: #0100ff;
   padding: 0em 8%;
   font-size: 1.75em;
@@ -228,18 +229,14 @@ h3 {
   color: #FF00DE;
   padding: 0em 4%; }
 
-a:link {
-  text-decoration: underline;
+a:link, a:visited {
+  font-weight: bold;
+  text-decoration: none;
   color: #0100ff; }
-
-a:visited {
-  text-decoration: underline;
-  color: #FF00DE; }
 
 a:hover, a:focus, a:active {
   text-decoration: underline;
-  color: #0100ff;
-  font-weight: bold; }
+  color: #0100ff; }
 
 ul {
   padding: 0;
@@ -313,18 +310,19 @@ p[role="contentinfo"] {
 
 .sidebar {
   border: solid 10px #FF00DE;
-  padding: 1.2em;
+  padding: 1em;
   box-sizing: border-box;
-  line-height: 1.2em;
   background-color: #e6ff00; }
 
 .sidebar h3 {
   text-transform: uppercase;
-  padding: 0;
-  line-height: 1em; }
+  padding: 0; }
 
 .sidebar a {
-  line-height: 1em; }
+  font-weight: normal; }
+
+.sidebar li {
+  line-height: 1.6em; }
 
 footer {
   text-align: center; }
@@ -377,10 +375,12 @@ footer a {
     text-transform: uppercase;
     padding: 0;
     font-size: 1.7em;
-    line-height: .6em; }
+    line-height: 0.9em;
+    margin-bottom: 0.5em; }
 
-  .sidebar a {
-    line-height: 1.5em;
-    font-size: 1em; } }
+  .sidebar li {
+    font-size: 0.9em;
+    line-height: 1em;
+    margin: 0.4em; } }
 
 /*# sourceMappingURL=style.css.map */

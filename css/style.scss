@@ -97,20 +97,22 @@ p[role="contentinfo"]{
 
 .sidebar {
 	border: solid 10px $primary-color;
-	padding: 1.2em;
+	padding: 1em;
 	box-sizing: border-box;
-  	line-height: 1.2em;
   	background-color: $color-2;
 }
 
 .sidebar h3 {
 	text-transform: uppercase;
 	padding: 0;
-	line-height: 1em;
 }
 
 .sidebar a {
-	line-height: 1em;
+	font-weight: normal;
+}
+
+.sidebar li {
+	line-height: 1.6em;
 }
 
 footer {
@@ -174,12 +176,14 @@ footer a {
 		text-transform: uppercase;
 		padding: 0;
 		font-size: 1.7em;
-		line-height: .6em;
+		line-height: 0.9em;
+		margin-bottom: 0.5em;
 	}
 
-	.sidebar a {
-		line-height: 1.5em;
-		font-size: 1em;
+	.sidebar li {
+		font-size: 0.9em;
+		line-height: 1em;
+		margin: 0.4em;
 	}
 
 }

@@ -11,6 +11,7 @@ p {
 
 h1 { 
 	background-color: $primary-color;
+	text-shadow: 5px 5px 0px $color-1;
  	font-family: 'blenny';
  	color: white;
  	padding: 0.5em 8%;
@@ -19,7 +20,7 @@ h1 {
 	}
 
 h2 {
-	font-family: 'blenny';
+	font-family: 'Proxima Nova';
 	color: $color-1;
 	padding: 0em 8%;
 	font-size: 1.75em;
@@ -36,20 +37,16 @@ h3 {
 	padding: 0em 4%;
 	}
 
-a:link { 
-	text-decoration: underline; 
+a:link, a:visited { 
+	font-weight: bold;
+	text-decoration: none;
 	color: $color-1;
-	}
+}
 
-a:visited { 
-	text-decoration: underline; 
-	color: $primary-color;
-	}
 
 a:hover, a:focus, a:active { 
 	text-decoration: underline; 
 	color: $color-1;
-	font-weight: bold;
 	}
 
 ul {
