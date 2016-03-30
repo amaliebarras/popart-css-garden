@@ -250,18 +250,19 @@ ul {
   padding: 1em 4%; }
 
 .summary a {
-  padding: 3em;
-  width: 3em;
   height: 3em;
+  width: 3em;
+  padding: 3em;
+  margin: 2em 0;
   border-radius: 50%;
   background-color: #FF00DE;
   font-weight: bold;
   color: #e6ff00;
   text-decoration: none;
+  display: inline-block;
   text-align: center;
   text-transform: uppercase;
-  line-height: 1em;
-  margin: 1em 0em; }
+  line-height: 1em; }
 
 a[title="This page's source HTML code, not to be modified."] {
   float: left; }
@@ -274,15 +275,13 @@ a[title="This page's sample CSS, the file you may modify."] {
 
 .summary p:last-child {
   line-height: 0em;
-  color: #fff; }
+  color: #fff;
+  margin-bottom: 2em; }
 
 .preamble {
   background-color: #e6ff00;
   padding: 2em 4%;
   clear: both; }
-
-.preamble h3 p {
-  float: left; }
 
 .explanation {
   padding: 2em 4%;
@@ -337,94 +336,29 @@ footer a {
   margin: 1em 0;
   font-weight: bold; }
 
+@media only screen and (min-width: 640px) and (max-width: 768px) {
+  .wrapper {
+    overflow: hidden; }
+
+  .design-selection {
+    float: left;
+    width: 50%; }
+
+  .design-archives {
+    float: right;
+    width: 45%; }
+
+  .zen-resources {
+    float: right;
+    width: 45%; } }
 @media only screen and (min-width: 769px) {
   .intro {
     float: left;
     width: 70%; }
 
-  .intro p {
-    width: 40%;
-    float: right; }
-
-  .summary {
-    padding: 7%; }
-
-  .summary a {
-    height: 10em;
-    width: 10em;
-    border-radius: 50%;
-    background-color: #FF00DE;
-    font-weight: bold;
-    color: #e6ff00;
-    text-decoration: none;
-    display: inline-block;
-    text-align: center;
-    text-transform: uppercase;
-    line-height: 1em; }
-
-  .summary a::after {
-    content: "!"; }
-
   .main {
-    float: left;
-    width: 70%; }
-
-  .preamble {
-    background-color: #e6ff00;
-    padding: 2em 5%; }
-
-  .preamble h3 p {
+    width: 70%;
     float: left; }
-
-  .preamble h3::after {
-    content: url(scream.png);
-    float: right;
-    margin: 0 1em; }
-
-  .participation::before {
-    float: right;
-    margin: 0 1em; }
-
-  .explanation {
-    padding: 2em 5%;
-    margin: 0em 1em 5em 1em; }
-
-  .explanation h3::after {
-    content: url(buddha.png);
-    float: left;
-    margin: 0em 1em; }
-
-  .participation {
-    background-color: #FF00DE;
-    padding: 2em 5%;
-    color: #fff; }
-
-  .participation h3 {
-    color: #fff; }
-
-  .participation::after {
-    content: url(hand.png);
-    margin: 0 1em; }
-
-  .benefits {
-    padding: 2em 5%; }
-
-  .requirements {
-    background-color: #FF00DE;
-    padding: 2em 5%;
-    color: #fff; }
-    .requirements h3 {
-      color: #fff; }
-
-  .requirements h3::after {
-    content: url(cactus.png);
-    float: right;
-    margin: 0 1em; }
-
-  p[role="contentinfo"] {
-    background-color: white;
-    border: solid 10px #e6ff00;
-    color: black; }
 
   .sidebar {
     border: solid 10px #FF00DE;
@@ -436,33 +370,17 @@ footer a {
     width: 30%;
     height: 100%;
     line-height: 1.2em;
-    background-color: #e6ff00; }
+    background-color: #e6ff00;
+    overflow: hidden; }
 
   .sidebar h3 {
     text-transform: uppercase;
     padding: 0;
-    line-height: 1em; }
+    font-size: 1.7em;
+    line-height: .6em; }
 
   .sidebar a {
     line-height: 1.5em;
-    font-size: 1.2em; }
-
-  footer {
-    text-align: center;
-    margin: 2em 0; }
-
-  footer > a {
-    padding: 3.5em;
-    width: 3.5em;
-    height: 3.5em;
-    border-radius: 50%;
-    background-color: #FF00DE;
-    font-weight: bold;
-    color: #e6ff00;
-    text-decoration: none;
-    display: inline-block;
-    text-align: center;
-    text-transform: uppercase;
-    line-height: 1em; } }
+    font-size: 1em; } }
 
 /*# sourceMappingURL=style.css.map */

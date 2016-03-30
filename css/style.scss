@@ -20,18 +20,19 @@
 }
 
 .summary a {
-	padding: 3em;
-	width: 3em;
 	height: 3em;
+	width: 3em;
+	padding: 3em;
+	margin: 2em 0;
 	border-radius: 50%;
 	background-color: $primary-color;
 	font-weight: bold;
 	color: $color-2;
 	text-decoration: none;
+	display: inline-block;
 	text-align: center;
 	text-transform: uppercase;
 	line-height: 1em;
-	margin: 1em 0em;
 }
 
 a[title="This page's source HTML code, not to be modified."]{
@@ -49,16 +50,13 @@ a[title="This page's sample CSS, the file you may modify."]{
 .summary p:last-child{
 	line-height: 0em;
 	color: #fff;
+	margin-bottom: 2em;
 }
 
 .preamble {
 	background-color: $color-2;
 	padding: 2em 4%;
 	clear: both;
-}
-
-.preamble h3 p {
-	float: left;
 }
 
 .explanation {
@@ -127,158 +125,61 @@ footer a {
 	font-weight:  bold;
 }
 
-@media only screen and (min-width: 769px){
+@media only screen and (min-width: 640px) and (max-width: 768px) {
+	.wrapper {
+		overflow: hidden;
+	}
 
-.intro {
-	float: left;
-	width: 70%;
-}
-
-.intro p {
-	width: 40%;
-	float: right;
-}
-
-.summary {
-	padding: 7%;
-}
-
-.summary a {
-	height: 10em;
-	width: 10em;
-	border-radius: 50%;
-	background-color: $primary-color;
-	font-weight: bold;
-	color: $color-2;
-	text-decoration: none;
-	display: inline-block;
-	text-align: center;
-	text-transform: uppercase;
-	line-height: 1em;
-}
-
-.summary a::after {
-	content: "!";
-}
-
-.main {
-	float: left;
-	width: 70%;
-}
-
-.preamble {
-	background-color: $color-2;
-	padding: 2em 5%;
-}
-
-.preamble h3 p {
-	float: left;
-}
-
-.preamble h3::after {
-	content: url(scream.png);
-	float: right;
-	margin: 0 1em;
-}
-
-.participation::before {
-	float: right;
-	margin: 0 1em;
-}
-
-.explanation {
-	padding: 2em 5%;
-	margin: 0em 1em 5em 1em;
-}
-
-.explanation h3::after {
-	content: url(buddha.png);
-	float: left;
-	margin: 0em 1em;
-}
-
-.participation {
-	background-color: $primary-color;
-	padding: 2em 5%;
-	color: #fff;
-}
-
-.participation h3{
-	color: #fff;
-}
-
-.participation::after {
-	content: url(hand.png);
-	margin: 0 1em;
-}
-
-.benefits {
-	padding: 2em 5%;
-}
-
-.requirements {
-	background-color: $primary-color;
-	padding: 2em 5%;
-	color: #fff;
-	h3 {
-		color: #fff;
+	.design-selection {
+		float: left;
+		width: 50%;
+	}
+	.design-archives {
+		float: right;
+		width: 45%;
+	}
+	.zen-resources {
+		float: right;
+		width: 45%;
 	}
 }
 
-.requirements h3::after {
-	content: url(cactus.png);
-	float: right;
-	margin: 0 1em;
-}
+@media only screen and (min-width: 769px) {
 
-p[role="contentinfo"]{
-	background-color: white;
-	border: solid 10px $color-2;
-	color: black;
-}
+	.intro {
+		float: left;
+		width: 70%;
+	}
 
-.sidebar {
-	border: solid 10px $primary-color;
-	padding: 0 1.2em;
-	box-sizing: border-box;
-	position:fixed;
-  	top:0;
-  	right:0;
-  	width:30%;
-  	height:100%;
-  	line-height: 1.2em;
-  	background-color: $color-2;
-}
+	.main {
+		width: 70%;
+		float: left;
+	}
 
-.sidebar h3 {
-	text-transform: uppercase;
-	padding: 0;
-	line-height: 1em;
-}
+	.sidebar {
+		border: solid 10px $primary-color;
+		padding: 0 1.2em;
+		box-sizing: border-box;
+		position:fixed;
+	  	top:0;
+	  	right:0;
+	  	width:30%;
+	  	height:100%;
+	  	line-height: 1.2em;
+	  	background-color: $color-2;
+		overflow: hidden;
+	}
 
-.sidebar a {
-	line-height: 1.5em;
-	font-size: 1.2em;
-}
+	.sidebar h3 {
+		text-transform: uppercase;
+		padding: 0;
+		font-size: 1.7em;
+		line-height: .6em;
+	}
 
-footer {
-	text-align: center;
-	margin: 2em 0;
-}
-
-footer > a {
-	padding: 3.5em;
-	width: 3.5em;
-	height: 3.5em;
-	border-radius: 50%;
-	background-color: $primary-color;
-	font-weight: bold;
-	color: $color-2;
-	text-decoration: none;
-	display: inline-block;
-	text-align: center;
-	text-transform: uppercase;
-	line-height: 1em;
-}
+	.sidebar a {
+		line-height: 1.5em;
+		font-size: 1em;
+	}
 
 }
