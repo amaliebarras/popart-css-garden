@@ -349,7 +349,7 @@ footer a {
   .zen-resources {
     float: right;
     width: 45%; } }
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 938px) {
   .intro {
     float: left;
     width: 70%; }
