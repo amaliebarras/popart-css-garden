@@ -18,6 +18,6 @@ I love each of these styles for unique reasons, and there were definitely elemen
 
 ## Decisions, Decisions
 
-![](https://github.com/amaliebarras/popart-css-garden/blob/master/Final%20Title.jpg)
+![](https://github.com/amaliebarras/popart-css-garden/blob/master/Final%20Tile.jpg)
 
 I put together borrowed elements from each design and came up with this. 
